@@ -4,3 +4,4 @@ opencv-python==4.5.5.64
 numpy==1.21.6
 mediapipe==0.10.11
 protobuf>=3.20.0,<4.0.0
+matplotlib
