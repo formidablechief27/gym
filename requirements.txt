@@ -3,5 +3,6 @@ Flask-Cors==3.0.10
 opencv-python-headless==4.5.5.64
 numpy==1.21.6
 mediapipe==0.10.11
-protobuf==3.20.0    # You can specify a version or use the latest version
-matplotlib==3.4.3  # You can specify a version or use the latest version
+protobuf==3.20.0
+matplotlib==3.4.3
+Pillow==8.4.0   # Add this line to install Pillow
