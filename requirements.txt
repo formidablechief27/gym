@@ -6,4 +6,5 @@ mediapipe==0.10.11
 protobuf==3.20.0
 matplotlib==3.4.3
 Pillow==8.4.0
-pyparsing==3.0.9   # Add this line for pyparsing
+pyparsing==3.0.9
+cycler==0.10.0   # Add this line for cycler
