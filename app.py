@@ -1,6 +1,7 @@
 import os
 import io
 import cv2
+import random
 import numpy as np
 import mediapipe as mp
 import heapq
@@ -193,7 +194,12 @@ def upload_video():
     if video.filename == '':
         return "No selected file", 400
     print("im here")
-    video_filename = "uploaded_video.mp4"
+    random_number = random.randint(1000, 9999)
+
+    # Construct the filename with the random number
+    video_filename = f"uploaded_video_{random_number}.mp4"
+
+    # Save the video with the new filename
     video.save(video_filename)
 
     # Process the video
@@ -235,7 +241,6 @@ def upload_video():
 
     # Release resources
     cap.release()
-    cv2.destroyAllWindows()
 
     # Analyze the angles
     analysis_results = analyze_angles(elbow1, back1)
