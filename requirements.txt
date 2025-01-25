@@ -9,3 +9,4 @@ Pillow==8.4.0
 pyparsing==3.0.9
 cycler==0.10.0
 six==1.16.0   # Add this line for six
+python-dateutil==2.8.2
