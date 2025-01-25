@@ -12,9 +12,9 @@ RUN apt-get update && apt-get install -y \
 # Set the working directory
 WORKDIR /app
 
-# Copy and install Python dependencies
+# Copy and install Python dependencies (without dependencies)
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt --timeout 100
+RUN pip install --no-cache-dir --no-deps -r requirements.txt --timeout 100
 
 # Copy the application code
 COPY . .
